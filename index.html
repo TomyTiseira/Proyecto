@@ -1,175 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>El club de la milanesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="header">
-            <a href="#" class="header__logo">
-                <img src="images/logot.ico" alt="Logo el club de la milanesa">
+
+    <header class="bg-black fixed-top">
+        <nav class="navbar px-5">
+            <a href="#" class="navbar-brand ms-4">
+                <img src="images/logot.ico" alt="Logo el club de la milanesa" width="60" height="60">
             </a>
-            <nav class="navbar">
-                <ul class="navbar__ul">
-                    <li class="navbar__li"><a class="navbar__a" href="#inicio">Inicio</a></li>
-                    <li class="navbar__li"><a class="navbar__a" href="#nosotros">Sobre Nosotros</a></li>
-                    <li class="navbar__li"><a class="navbar__a" href="#promociones">Nuestras promociones</a></li>
-                    <li class="navbar__li"><a class="navbar__a" href="#clientes">Opiones de clientes</a></li>
-                    <li class="navbar__li"><a class="navbar__a" href="#contacto">Contactanos</a></li>
-                </ul>
-            </nav>
-            
-        </header>
+            <ul class="navbar-nav flex-row mb-2 mb-lg-0 ">
+                <li class="nav-item me-4"><a class="nav-a" href="#inicio">Inicio</a></li>
+                <li class="nav-item me-4"><a class="nav-a" href="#nosotros">Sobre Nosotros</a></li>
+                <li class="nav-item me-4"><a class="nav-a" href="#promociones">Nuestras promociones</a></li>
+                <li class="nav-item me-4"><a class="nav-a" href="#clientes">Opiones de clientes</a></li>
+                <li class="nav-item me-4"><a class="nav-a" href="#contacto">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main class="main">
-            <div class="flex-container-main">
-                <section class="flex-container-main__inicio" id="inicio">
-                    <div class="flex-container-main__content">
-                        <h3>Comé milanesa. No te hará feliz pero se acerca bastante</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">Reserva la tuya ahora</a>
-                    </div>
-                </section>
+    <section class="d-flex justify-content-end align-items-center bg-img" id="inicio">
+        <div class="container-inicio">
+            <h3 class="fs-1 text-uppercase text-light">Comé milanesa. No te hará feliz pero se acerca bastante</h3>
+            <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="fs-6 d-inline-block boton-a">Reserva la tuya ahora</a>
+        </div>
+    </section>
 
-                <section class="flex-container-main__nosotros" id="nosotros">
-                    <h1 class="flex-container-main__title">Sobre <span>nosotros</span></h1>
-                    <div class="flex-container-main__container-nosotros">
-                        <div class="flex-container-main__img">
-                            <img src="images/nosotros.png" alt="Club de la milanesa">
-                        </div>
-                        <div class="flex-container-main__content">
-                            <h3>Nuestra historia</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corrupti molestiae, nisi, id
-                                enim possimus, harum dolor quaerat recusandae maiores deserunt ipsum cum quae numquam velit!
-                                Eius numquam maxime corrupti?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet voluptatibus
-                                placeat
-                                quas, quia voluptatum obcaecati dignissimos cum magni porro officiis est totam amet tempore
-                                quo
-                                id, maiores fuga velit.</p>
-                                <a href="#" class="btn">Lee más</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="flex-container-main__promociones" id="promociones">
-                    <h2 class="flex-container-main__title">Nuestras <span>promociones</span></h2>
-                    <div class="flex-container-main__grid-container">
-                        <div class="flex-container-main__box">
-                            <img src="images/promociones1.png"
-                                alt="Promociones el club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__precio">$16.99 <span>$20.99</span>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <img src="images/promociones2.png"
-                                alt="Promociones el club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__precio">$16.99 <span>$20.99</span>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <img src="images/promociones3.png"
-                                alt="Promociones el club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__precio">$16.99 <span>$20.99</span>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <img src="images/promociones4.png"
-                                alt="Promociones el club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__precio">$16.99 <span>$20.99</span>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <img src="images/promociones5.png"
-                                alt="Promociones el club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__precio">$16.99 <span>$20.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="flex-container-main__clientes" id="clientes">
-                    <h2 class="flex-container-main__title">Opiones de <span>clientes</span></h2>
-                    <div class="flex-container-main__grid-container">
-                        <div class="flex-container-main__box">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
-                            <img class="flex-container-main__cliente" src="images/cliente1.png" alt="Cliente Club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
-                            <img class="flex-container-main__cliente" src="images/cliente2.png" alt="Cliente Club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="flex-container-main__box">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
-                            <img class="flex-container-main__cliente" src="images/cliente3.png" alt="Cliente Club de la milanesa">
-                            <h3>Lorem</h3>
-                            <div class="flex-container-main__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="flex-container-main__contacto" id="contacto">
-                    <h2 class="flex-container-main__title"><span>Contactanos</span></h2>
-                    <div class="flex-container-main__container-contacto">
-                        <iframe class="flex-container-main__iframe"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6235177424605!2d-64.17707018485108!3d-31.452029981392283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2e1ceba0575%3A0x38b397899dfc0d32!2sJose%20Moretto%203679%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1651091318058!5m2!1ses-419!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <!-- ? Proximamente agregar un formulario... -->
-                    </div>
-                </section>
+    <section id="nosotros">
+        <h2 class="text-center text-uppercase fs-1 pb-3">Sobre <span>nosotros</span></h2>
+        <div class="d-flex align-items-center flex-wrap bg">
+            <div class="container-img-nosotros">
+                <img src="images/nosotros.png" alt="Club de la milanesa">
             </div>
-        </main>
-
-        <footer class="footer">
-            <div id="contactos">
-                <nav class="footer__nav">
-                    <ul>
-                        <li><a href="https://www.facebook.com/elclubdelamilanesa/" class="fab fa-facebook-f"></a></li>
-                        <li><a href="https://twitter.com/elclubdelamila" class="fab fa-twitter"></a></li>
-                        <li><a href="https://www.instagram.com/elclubdelamilanesa/" class="fab fa-instagram"></a></li>
-                    </ul>
-                </nav>
+            <div class="container-content-nosotros p-3">
+                <h3 class="fs-2 text-uppercase text-light">Nuestra historia</h3>
+                <p class="text-p fs-5 pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corrupti molestiae, nisi, id
+                    enim possimus, harum dolor quaerat recusandae maiores deserunt ipsum cum quae numquam velit!
+                    Eius numquam maxime corrupti?</p>
+                <p class="text-p fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet voluptatibus
+                    placeat
+                    quas, quia voluptatum obcaecati dignissimos cum magni porro officiis est totam amet tempore
+                    quo
+                    id, maiores fuga velit.</p>
+                    <a href="#" class="fs-6 d-inline-block boton-a">Lee más</a>
             </div>
-            <div class="footer__creditos">Creado por <span>Tomás Tiseira</span> | Todos los derechos reservados</div>
+        </div>
+    </section>
 
-        </footer> 
-    </div>
+
+    <section id="promociones">
+        <h2 class="text-center text-uppercase fs-1 pb-3">Nuestras <span>promociones</span></h2>
+        <div class="grid-container">
+            <div class="box-grid text-center">
+                <img src="images/promociones1.png"
+                    alt="Promociones el club de la milanesa">
+                <h3 class="fs-5 py-2">Lorem</h3>
+                <div class="fs-6">$16.99 <span>$20.99</span>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <img src="images/promociones2.png"
+                    alt="Promociones el club de la milanesa">
+                <h3 class="fs-5 py-2">Lorem</h3>
+                <div class="fs-6">$16.99 <span>$20.99</span>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <img src="images/promociones3.png"
+                    alt="Promociones el club de la milanesa">
+                <h3 class="fs-5 py-2">Lorem</h3>
+                <div class="fs-6">$16.99 <span>$20.99</span>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <img src="images/promociones4.png"
+                    alt="Promociones el club de la milanesa">
+                <h3 class="fs-5 py-2">Lorem</h3>
+                <div class="fs-6">$16.99 <span>$20.99</span>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <img src="images/promociones5.png"
+                    alt="Promociones el club de la milanesa">
+                <h3 class="fs-5 py-2">Lorem</h3>
+                <div class="fs-6">$16.99 <span>$20.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <h2 class="text-center text-uppercase fs-1 pb-3">Opiones de <span>clientes</span></h2>
+        <div class="grid-container">
+            <div class="box-grid text-center">
+                <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
+                <img class="img-cliente" src="images/cliente1.png" alt="Cliente Club de la milanesa">
+                <h3 class="fs-4">Lorem</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
+                <img class="img-cliente" src="images/cliente2.png" alt="Cliente Club de la milanesa">
+                <h3 class="fs-4">Lorem</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box-grid text-center">
+                <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
+                <img class="img-cliente" src="images/cliente3.png" alt="Cliente Club de la milanesa">
+                <h3 class="fs-4">Lorem</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="text-center text-uppercase fs-1 pb-3"><span>Contactanos</span></h2>
+        <div class="d-flex bg flex-wrap gap-1">
+            <iframe class="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6235177424605!2d-64.17707018485108!3d-31.452029981392283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2e1ceba0575%3A0x38b397899dfc0d32!2sJose%20Moretto%203679%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1651091318058!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- ? Proximamente agregar un formulario... -->
+        </div>
+    </section>
+
+    <footer class="bg text-center" id="contactos">
+        <nav class="footer__nav">
+            <ul class="d-flex justify-content-center list-unstyled">
+                <li class="pt-2 px-3"><a href="https://www.facebook.com/elclubdelamilanesa/" class="fab fa-facebook-f fs-5 text-decoration-none"></a></li>
+                <li class="pt-2 px-3"><a href="https://twitter.com/elclubdelamila" class="fab fa-twitter fs-5 text-decoration-none"></a></li>
+                <li class="pt-2 px-3"><a href="https://www.instagram.com/elclubdelamilanesa/" class="fab fa-instagram fs-5 text-decoration-none"></a></li>
+            </ul>
+        </nav>
+        <div class="fs-5 text-white pb-3 fw-lighter">Creado por <span>Tomás Tiseira</span> | Todos los derechos reservados</div>
+    </footer> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
