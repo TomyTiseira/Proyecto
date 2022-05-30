@@ -72,7 +72,21 @@ section h2 span {
 
 .boton-a:hover {
     letter-spacing: .2rem;
-    color: #000;
+    transform: translateY(-3px);
+    animation: colorBottom 3s ease-out infinite;
+}
+
+
+@keyframes colorBottom {
+    0% {
+        color: #000;
+        background-color: var(--main-color);
+    }
+
+    100% {
+        color: #fff;
+        background-color: var(--bg);
+    }
 }
 
 .bg {
