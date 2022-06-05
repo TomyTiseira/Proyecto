@@ -12,10 +12,9 @@
 </head>
 
 <body>
-
     <header class="bg-black fixed-top">
         <nav class="navbar px-5">
-            <a href="#" class="navbar-brand ms-4">
+            <a href="#" class="navbar-brand ms-4 logo">
                 <img src="images/logot.ico" alt="Logo el club de la milanesa" width="60" height="60">
             </a>
             <ul class="navbar-nav flex-row mb-2 mb-lg-0 ">
@@ -26,12 +25,14 @@
                 <li class="nav-item me-4"><a class="nav-a" href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
+        <!-- No me dejó usar el menu hamburgesa de bootstrap, cuando pueda solucionar el error lo cambiaré para tener la funcionalidad de javaScript que usa -->
+        <img src="images/menu-ham.png" class="menu-ham" width="30" height="30">
     </header>
 
     <main>
         <section class="d-flex justify-content-end align-items-center bg-img" id="inicio">
             <div class="container-inicio">
-                <h3 class="fs-1 text-uppercase text-light">Comé milanesa. No te hará feliz pero se acerca bastante</h3>
+                <h3 class="fs-1 text-uppercase text-light">Comé una milanesa. No te hará feliz pero se acerca bastante</h3>
                 <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <a href="#" class="fs-6 d-inline-block boton-a">Reserva la tuya ahora</a>
             </div>
@@ -57,7 +58,6 @@
                 </div>
             </div>
         </section>
-    
     
         <section id="promociones">
             <h2 class="text-center text-uppercase fs-1 pb-3">Nuestras <span>promociones</span></h2>
@@ -150,7 +150,6 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <!-- ? Proximamente agregar un formulario... -->
             </div>
         </section>
     </main>

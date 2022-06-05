@@ -18,6 +18,10 @@ body {
     background: var(--bg);
 }
 
+nav-link {
+    color: #fff;
+}
+
 section {
     padding: 1.25rem 7%;
 }
@@ -32,6 +36,13 @@ section h2 span {
 
 .bg-black {
     background-color: var(--bg);
+}
+
+.menu-ham {
+    display: none;
+    background-color: #fff;
+    padding: 0.3rem;
+    margin: 1rem;
 }
 
 .nav-a {
@@ -94,7 +105,7 @@ section h2 span {
 }
 
 .container-img-nosotros {
-    flex: 1 1 45rem;
+    flex: 1 1 33.75rem;
 }
 
 .container-img-nosotros img {
@@ -102,7 +113,7 @@ section h2 span {
 }
 
 .container-content-nosotros {
-    flex: 1 1 45rem;
+    flex: 1 1 33.75rem;
 }
 
 .text-p {
@@ -178,4 +189,19 @@ section h2 span {
 
 footer span {
     color: var(--main-color);
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        display: none;
+    }
+    .menu-ham {
+        display: block;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo {
+        display: none;
+    }
 }
