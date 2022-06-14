@@ -153,3 +153,6 @@ body {
   .container-inicio {
     padding: 4rem;
     margin: auto; } }
+
+.disclaimer {
+  display: none; }
