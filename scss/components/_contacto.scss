@@ -1,0 +1,16 @@
+.iframe {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+#contacto {
+    @extend %section;
+    h2 {
+        @extend %h2;
+        span {
+            @extend %span;
+        }
+    }
+}
+

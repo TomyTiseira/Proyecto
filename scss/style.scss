@@ -1,12 +1,17 @@
-// Variables
-$main-color: #fffacd;
-$black: #13131a;
-$bg: #010103;
-$border: 0.1rem solid rgba(255, 255, 255, 0.3);
+@import 'components/header';
+@import 'components/inicio';
+@import 'components/nosotros';
+@import 'components/promociones';
+@import 'components/clientes';
+@import 'components/contacto';
+@import 'components/footer';
+@import 'base/variables';
+@import 'base/colores';
+@import 'base/mixin';
+
 
 * {
-    margin: 0;
-    padding: 0;
+    @include pad-mar(0, 0);
     box-sizing: border-box;
     outline: none;
     border: none;
@@ -14,64 +19,28 @@ $border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
 body {
-    background: $bg;
+    background: nth($colores, 3);
 }
 
-section {
-    padding: 1.25rem 7%;
-    h2 {
-    color: #fff;
-    span {
-        color: $main-color;
-    }
-    }
-}
-
-.bg-black {
-    background-color: $bg;
+.bgBlack {
+    background-color: nth($colores, 3);
 }
 
 .bg {
-    background-color: $black;
+    background-color: nth($colores, 2);
 }
 
-.menu-ham {
-    display: none;
-    background-color: #fff;
-    padding: 0.3rem;
-    margin: 1rem;
-}
-
-.nav-a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-        color: $main-color;
-        border-bottom: 0.1rem solid $main-color;
-        padding-bottom: 0.5rem;
-    }
-}
-
-.bg-img{
-    min-height: 100vh;
-    background: url(../images/bg.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.container-inicio {
-    max-width: 37.5rem;
-    p {
-        font-weight: lighter;
-        line-height: 1.8;
-        color: #eee;
-    }
+.text-p {    
+    color: nth($colores, 7);
+    line-height: 1.2;
+    font-weight: lighter;
+    text-align: justify;
 }
 
 .boton-a {
     padding: 0.9rem 3rem;
-    color: #000;
-    background: $main-color;
+    color: nth($colores, 6);
+    background: nth($colores, 1);
     cursor: pointer;
     text-decoration: none;
     &:hover {
@@ -83,32 +52,14 @@ section {
 
 @keyframes colorBottom {
     0% {
-        color: #000;
-        background-color: $main-color;
+        color: nth($colores, 6);
+        background-color: nth($colores, 1);
     }
 
     100% {
         color: #fff;
-        background-color: $bg;
+        background-color: nth($colores, 3);
     }
-}
-
-.container-img-nosotros {
-    flex: 1 1 33.75rem;
-    img {
-        width: 100%;
-    }
-}
-
-.container-content-nosotros {
-    flex: 1 1 33.75rem;
-}
-
-.text-p {
-    color: #ccc;
-    line-height: 1.2;
-    font-weight: lighter;
-    text-align: justify;
 }
 
 .grid-container {
@@ -128,60 +79,6 @@ section {
     }
 }
 
-#promociones {
-    .box-grid {
-        div {
-            color: #fff;
-            span {
-                text-decoration: line-through;
-                font-weight: lighter;
-                color: #ccc;
-            }
-        }
-        &:hover {
-            background-color: #fff;
-        }
-        &:hover > * {
-            color: $black;
-        }
-    }
-}
-
-.img-cliente {
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.stars {
-    color: $main-color;
-}
-
-.iframe {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.redes {
-    height: 3rem;
-    width: 3rem;  
-    line-height: 3rem;
-    color: #fff;
-    border: $border;
-    margin: 0.3rem;
-    border-radius: 50%;
-    &:hover {
-        background: $main-color;
-        color: #000;
-    }
-}
-
-footer {
-    span {
-        color: $main-color;
-    }
-}
-
 @media (max-width: 576px) {
     .navbar {
         display: none;
@@ -189,10 +86,16 @@ footer {
     .menu-ham {
         display: block;
     }
+    .container-inicio {
+        @include pad-mar(2rem, auto);
+    }
 }
 
 @media (max-width: 850px) {
     .logo {
         display: none;
+    }
+    .container-inicio {
+        @include pad-mar(4rem, auto);
     }
 }

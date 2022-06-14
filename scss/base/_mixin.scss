@@ -1,0 +1,5 @@
+
+@mixin pad-mar($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+}

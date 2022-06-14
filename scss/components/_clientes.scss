@@ -1,0 +1,20 @@
+@import '../base/colores';
+
+.img-cliente {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars {
+    color: nth($colores, 1);
+}
+
+#clientes {
+    @extend %section;
+    h2 {
+        @extend %h2;
+        span {
+            @extend %span;
+        }
+    }
+}

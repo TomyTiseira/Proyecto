@@ -1,0 +1,22 @@
+@import '../base/colores';
+@import '../base/variables';
+
+.redes {
+    height: 3rem;
+    width: 3rem;  
+    line-height: 3rem;
+    color: nth($colores, 4);
+    border: $border;
+    margin: 0.3rem;
+    border-radius: 50%;
+    &:hover {
+        background: nth($colores, 1);
+        color: nth($colores, 6);
+    }
+}
+
+footer {
+    span {
+        color: nth($colores, 1);
+    }
+}
