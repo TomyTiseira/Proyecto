@@ -24,5 +24,8 @@
         &:hover > * {
             color: nth($colores, 3);
         }
+        img {
+            border-radius: 50%;
+        }
     }
 }
