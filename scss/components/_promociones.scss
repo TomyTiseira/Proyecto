@@ -1,6 +1,7 @@
 @import '../base/colores';
+@import '../base/extend';
 
-
+/* Título de Sección Promociones */
 #promociones {
     @extend %section;
     h2 {

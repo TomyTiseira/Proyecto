@@ -1,9 +1,13 @@
+@import '../base/extend';
+
+/* Ifreme de Sección Contacto */
 .iframe {
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
 
+/* Título Sección Contacto */
 #contacto {
     @extend %section;
     h2 {

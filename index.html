@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Inicio Head -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,46 +14,70 @@
     <meta property="og:title" content="Coff Fe - Toma un Coff Fe. No te hará feliz, pero se acerca bastante">
     <meta proterty="og:url" content="https://www.coff-fe.com"> <!-- para definir el url -->
     <meta property="og:description" content="Somos especialistas en preparar coff fe de calidad y en la atencion a nuestros clientes, con tiendas por todo el mundo">
-
+    <!-- Icono -->
+    <link rel="shortcut icon" href="images/logo2.svg" type="image/x-icon">
+    <!-- Title -->
     <title>Coff Fe - Toma un Coff Fe. No te hará feliz pero se acerca bastante</title>
+
+    <!-- BootsTrap Linkeado -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Fin Head -->
 
+<!-- Inicio Body -->
 <body>
+    <!-- Inicio Header -->
     <header class="bgBlack fixed-top">
-        <nav class="navbar px-5">
-            <a href="#" class="navbar-brand ms-4 logo">
-                <img src="images/logo2.svg" alt="Coffe Fe" width="60" height="60">
-            </a>
-            <ul class="navbar-nav flex-row mb-2 mb-lg-0 ">
-                <li class="nav-item me-4"><a class="nav-a" href="#inicio">Inicio</a></li>
-                <li class="nav-item me-4"><a class="nav-a" href="#nosotros">Sobre Nosotros</a></li>
-                <li class="nav-item me-4"><a class="nav-a" href="#promociones">Nuestras promociones</a></li>
-                <li class="nav-item me-4"><a class="nav-a" href="#clientes">Opiones de clientes</a></li>
-                <li class="nav-item me-4"><a class="nav-a" href="#contacto">Contactanos</a></li>
-            </ul>
-        </nav>
-        <!-- No me dejó usar el menu hamburgesa de bootstrap, cuando pueda solucionar el error lo cambiaré para tener la funcionalidad de javaScript que usa -->
-        <img src="images/menu-ham.webp" class="menu-ham" width="30" height="30" alt="menu hamburguesa">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Imagen Logo -->
+                <a class="navbar-brand" href="#"><img src="images/logo2.svg" alt="Coffe Fe" width="60" height="60"></a>
+                <button class="navbar-toggler bg-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar Items -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link nav-a" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link nav-a" href="#nosotros">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link nav-a" href="#promociones">Nuestras Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link nav-a" href="#clientes">Opiniones de Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link nav-a" href="#contacto">Contactanos</a></li>
+                    </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+    <!-- Fin Header -->
 
     <main>
+        <!-- Inicio Sección Inicio -->
         <section class="d-flex justify-content-start align-items-center bg-img" id="inicio">
+            <!-- Container -->
             <div class="container-inicio">
                 <h1 class="fs-1 text-uppercase text-light">Toma un Coff Fe. No te hará feliz, pero se acerca bastante</h1>
                 <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <a href="#" class="fs-6 d-inline-block boton-a">Pide el tuyo aquí</a>
             </div>
         </section>
+        <!-- Fin Sección Inicio -->
     
+        <!-- Inicio Sección Nosotros -->
         <section id="nosotros">
+            <!-- Título de la sección -->
             <h2 class="text-center text-uppercase fs-1 pb-3">Sobre <span>nosotros</span></h2>
+            <!-- Container -->
             <div class="d-flex align-items-center flex-wrap bg">
                 <div class="container-img-nosotros">
+                    <!-- Imagen -->
                     <img src="images/nosotros.webp" alt="Coffe Fe">
                 </div>
+                <!-- Container de párrafos -->
                 <div class="container-content-nosotros p-3">
                     <h3 class="fs-2 text-uppercase text-light">Nuestra historia</h3>
                     <p class="text-p fs-5 pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corrupti molestiae, nisi, id
@@ -67,10 +92,15 @@
                 </div>
             </div>
         </section>
+        <!-- Fin Sección Nosotros -->
     
+        <!-- Inicio Sección Promociones -->
         <section id="promociones">
+            <!-- Titulo de la sección -->
             <h2 class="text-center text-uppercase fs-1 pb-3">Nuestras <span>promociones</span></h2>
+            <!-- Container -->
             <div class="grid-container">
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <img src="images/promociones1.webp"
                         alt="Promociones Coffe Fe">
@@ -78,6 +108,7 @@
                     <div class="fs-6">$16.99 <span>$20.99</span>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <img src="images/promociones2.webp"
                         alt="Promociones Coffe Fe">
@@ -85,6 +116,7 @@
                     <div class="fs-6">$16.99 <span>$20.99</span>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <img src="images/promociones3.webp"
                         alt="Promociones Coffe Fe">
@@ -92,6 +124,7 @@
                     <div class="fs-6">$16.99 <span>$20.99</span>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <img src="images/promociones4.webp"
                         alt="Promociones Coffe Fe">
@@ -99,6 +132,7 @@
                     <div class="fs-6">$16.99 <span>$20.99</span>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <img src="images/promociones5.webp"
                         alt="Promociones Coffe Fe">
@@ -108,14 +142,20 @@
                 </div>
             </div>
         </section>
+        <!-- Fin Sección Promociones -->
     
+        <!-- Inicio Sección Clientes -->
         <section id="clientes">
+            <!-- Titulo de la sección -->
             <h2 class="text-center text-uppercase fs-1 pb-3">Opiones de <span>clientes</span></h2>
+            <!-- Container -->
             <div class="grid-container">
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
                     <img class="img-cliente" src="images/cliente1.webp" alt="Cliente Coffe Fe">
                     <h3 class="fs-4">Lorem</h3>
+                    <!-- Estrellas -->
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -124,10 +164,12 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
                     <img class="img-cliente" src="images/cliente2.webp" alt="Cliente Coffe Fe">
                     <h3 class="fs-4">Lorem</h3>
+                    <!-- Estrellas -->
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -136,10 +178,12 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
+                <!-- Box -->
                 <div class="box-grid text-center">
                     <p class="fs-6 text-light text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, necessitatibus dolores, veniam a corrupti saepe voluptates repellat quasi eos accusamus voluptatum tenetur, iusto porro. Repellat eos ea sit soluta sapiente.</p>
                     <img class="img-cliente" src="images/cliente3.webp" alt="Cliente Coffe Fe">
                     <h3 class="fs-4">Lorem</h3>
+                    <!-- Estrellas -->
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -150,10 +194,15 @@
                 </div>
             </div>
         </section>
+        <!-- Fin Sección Clientes -->
     
+        <!-- Inicio Sección Contacto -->
         <section id="contacto">
+            <!-- Titulo de la sección -->
             <h2 class="text-center text-uppercase fs-1 pb-3"><span>Contactanos</span></h2>
+            <!-- Container -->
             <div class="d-flex bg flex-wrap gap-1">
+                <!-- Map -->
                 <iframe class="iframe"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6235177424605!2d-64.17707018485108!3d-31.452029981392283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2e1ceba0575%3A0x38b397899dfc0d32!2sJose%20Moretto%203679%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1651091318058!5m2!1ses-419!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -161,22 +210,29 @@
                 </iframe>
             </div>
         </section>
+        <!-- Fin sección Contacto -->
     </main>
 
+    <!-- Inicio Footer -->
     <footer class="bg text-center" id="contactos">
+        <!-- NavBar del Footer -->
         <nav class="footer__nav">
+            <!-- Redes Sociales -->
             <ul class="d-flex justify-content-center list-unstyled">
-                <li class="pt-2 px-3"><a href="https://www.facebook.com/elclubdelamilanesa/" class="fab fa-facebook-f fs-5 text-decoration-none redes"></a></li>
-                <li class="pt-2 px-3"><a href="https://twitter.com/elclubdelamila" class="fab fa-twitter fs-5 text-decoration-none redes"></a></li>
-                <li class="pt-2 px-3"><a href="https://www.instagram.com/elclubdelamilanesa/" class="fab fa-instagram fs-5 text-decoration-none redes"></a></li>
+                <li class="pt-2 px-3"><a href="https://www.facebook.com/coff-fe" class="fab fa-facebook-f fs-5 text-decoration-none redes"></a></li>
+                <li class="pt-2 px-3"><a href="https://twitter.com/coff-fe" class="fab fa-twitter fs-5 text-decoration-none redes"></a></li>
+                <li class="pt-2 px-3"><a href="https://www.instagram.com/coff-fe" class="fab fa-instagram fs-5 text-decoration-none redes"></a></li>
             </ul>
         </nav>
+        <!-- Derechos De Autor -->
         <div class="fs-5 text-white pb-3 fw-lighter">Creado por <span>Tomás Tiseira</span> | Todos los derechos reservados</div>
     </footer> 
 
+    <!-- Código JavaScript de BootsTrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
+<!-- Fin Body -->
 
 </html>

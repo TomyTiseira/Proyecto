@@ -3,3 +3,7 @@
     padding: $pad;
     margin: $mar;
 }
+
+@mixin width($w) {
+    width: $w;
+}

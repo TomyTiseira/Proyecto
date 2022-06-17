@@ -1,6 +1,6 @@
 @import '../base/colores';
-@import '../base/extend';
 
+/* Background de Inicio */
 .bg-img {
     min-height: 100vh;
     background: url(../../images/bg.webp) no-repeat;
@@ -8,6 +8,7 @@
     background-position: center;
 }
 
+/* Container Inicio */
 .container-inicio {
     max-width: 37.5rem;
     margin: 10rem;

@@ -1,11 +1,6 @@
 @import '../base/mixin';
 @import '../base/colores';
-
-.menu-ham {
-    display: none;
-    background-color: nth($colores, 4);
-    @include pad-mar(0.3rem, 1rem);
-}
+@import '../base/extend';
 
 .nav-a {
     color: nth($colores, 4);
@@ -15,4 +10,8 @@
         border-bottom: 0.1rem solid nth($colores, 1);
         padding-bottom: 0.5rem;
     }
+}
+
+.bg-button {
+    background-color: nth($colores, 1);
 }
