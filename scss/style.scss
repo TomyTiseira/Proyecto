@@ -89,15 +89,23 @@ body {
 }
 
 /* Medias Queries */
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .container-inicio {
-        @include pad-mar(2rem, auto);
+        @include pad-mar(4rem, auto);
     }
 }
 
-@media (max-width: 850px) {
+@media (min-width: 992px) {
     .container-inicio {
-        @include pad-mar(4rem, auto);
+        @include pad-mar(0, 10rem);       
+    }
+    .nav-a:hover {
+        color: nth($colores, 1);
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid nth($colores, 1);
+    }
+    .bg-img {
+        background: url(../../images/bg.webp) no-repeat;
     }
 }
 

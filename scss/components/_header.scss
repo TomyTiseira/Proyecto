@@ -7,7 +7,6 @@
     text-decoration: none;
     &:hover {
         color: nth($colores, 1);
-        border-bottom: 0.1rem solid nth($colores, 1);
         padding-bottom: 0.5rem;
     }
 }
