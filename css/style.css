@@ -1,136 +1,15 @@
 @charset "UTF-8";
-#nosotros, #promociones, #clientes, #contacto {
-  padding: 1.25rem 7%; }
-
-#nosotros h2, #promociones h2, #clientes h2, #contacto h2 {
-  color: #fff; }
-
-#nosotros h2 span, #promociones h2 span, #clientes h2 span, #contacto h2 span {
-  color: #fffacd; }
-
-.nav-a {
-  color: #fff;
-  text-decoration: none; }
-  .nav-a:hover {
-    color: #fffacd;
-    padding-bottom: 0.5rem; }
-
-.bg-button {
-  background-color: #fffacd; }
-
-/* Background de Inicio */
-.bg-img {
-  min-height: 100vh;
-  background: url(../../images/bg-movil.webp) no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-/* Container Inicio */
-.container-inicio {
-  max-width: 37.5rem;
-  padding: 2rem;
-  margin: auto; }
-  .container-inicio p {
-    font-weight: lighter;
-    line-height: 1.8;
-    color: #eee; }
-
-#nosotros, #promociones, #clientes, #contacto {
-  padding: 1.25rem 7%; }
-
-#nosotros h2, #promociones h2, #clientes h2, #contacto h2 {
-  color: #fff; }
-
-#nosotros h2 span, #promociones h2 span, #clientes h2 span, #contacto h2 span {
-  color: #fffacd; }
-
-/* Container de Imagen de Sección Nosotros */
-.container-img-nosotros {
-  flex: 1 1 33.75rem; }
-  .container-img-nosotros img {
-    width: 100%; }
-
-/* Container de Contenido de Sección Nosotros */
-.container-content-nosotros {
-  flex: 1 1 33.75rem; }
-
-/* Título de Sección Nosotros */
-#nosotros, #promociones, #clientes, #contacto {
-  padding: 1.25rem 7%; }
-
-#nosotros h2, #promociones h2, #clientes h2, #contacto h2 {
-  color: #fff; }
-
-#nosotros h2 span, #promociones h2 span, #clientes h2 span, #contacto h2 span {
-  color: #fffacd; }
-
-/* Título de Sección Promociones */
-#promociones .box-grid div {
-  color: #fff; }
-  #promociones .box-grid div span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    color: #ccc; }
-
-#promociones .box-grid:hover {
-  background-color: #fff; }
-
-#promociones .box-grid:hover > * {
-  color: #010103; }
-
-#promociones .box-grid img {
-  border-radius: 50%; }
-
-#nosotros, #promociones, #clientes, #contacto {
-  padding: 1.25rem 7%; }
-
-#nosotros h2, #promociones h2, #clientes h2, #contacto h2 {
-  color: #fff; }
-
-#nosotros h2 span, #promociones h2 span, #clientes h2 span, #contacto h2 span {
-  color: #fffacd; }
-
-/* Imagenes Sección Cliente */
-.img-cliente {
-  border-radius: 50%;
-  object-fit: cover; }
-
-/* Estrellas */
-.stars {
-  color: #fffacd; }
-
-/* Título de Sección Clientes */
-#nosotros, #promociones, #clientes, #contacto {
-  padding: 1.25rem 7%; }
-
-#nosotros h2, #promociones h2, #clientes h2, #contacto h2 {
-  color: #fff; }
-
-#nosotros h2 span, #promociones h2 span, #clientes h2 span, #contacto h2 span {
-  color: #fffacd; }
-
-/* Ifreme de Sección Contacto */
-.iframe {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover; }
-
-/* Título Sección Contacto */
-/* Logo Redes */
-.redes {
-  height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
-  color: #fff;
-  border: 0.1rem solid rgba(255, 255, 255, 0.3);
-  margin: 0.3rem;
-  border-radius: 50%; }
-  .redes:hover {
-    background: #fffacd;
-    color: #000; }
-
-footer span {
-  color: #fffacd; }
+/* Keyframes */
+@keyframes colorBottom {
+  0% {
+    color: #000;
+    background-color: #fffacd; }
+  50% {
+    color: #fff;
+    background-color: #010103; }
+  100% {
+    color: #000;
+    background-color: #fffacd; } }
 
 * {
   padding: 0;
@@ -171,18 +50,6 @@ body {
     transform: translateY(-3px);
     animation: colorBottom 3s ease-out infinite; }
 
-/* Keyframes */
-@keyframes colorBottom {
-  0% {
-    color: #000;
-    background-color: #fffacd; }
-  50% {
-    color: #fff;
-    background-color: #010103; }
-  100% {
-    color: #000;
-    background-color: #fffacd; } }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -195,6 +62,154 @@ body {
     height: 6.25rem; }
   .box-grid h3 {
     color: #fff; }
+
+.disclaimer {
+  display: none; }
+
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+/* Logo Redes */
+.redes {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #fff;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  margin: 0.3rem;
+  border-radius: 50%; }
+  .redes:hover {
+    background: #fffacd;
+    color: #000; }
+
+footer span {
+  color: #fffacd; }
+
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+.nav-a {
+  color: #fff;
+  text-decoration: none; }
+  .nav-a:hover {
+    color: #fffacd;
+    padding-bottom: 0.5rem; }
+
+.bg-button {
+  background-color: #fffacd; }
+
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+/* Imagenes Sección Cliente */
+.img-cliente {
+  border-radius: 50%;
+  object-fit: cover; }
+
+/* Estrellas */
+.stars {
+  color: #fffacd; }
+
+/* Título de Sección Clientes */
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+/* Ifreme de Sección Contacto */
+.iframe {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover; }
+
+/* Título Sección Contacto */
+.form-container {
+  flex: 1 1 45rem;
+  margin: 1rem; }
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3); }
+  .inputBox label {
+    color: #fff;
+    font-size: 1.3rem;
+    padding-left: 1rem; }
+  .inputBox input {
+    padding: 0;
+    margin: 1rem;
+    background: none; }
+  .inputBox textarea {
+    padding: 0;
+    margin: 1rem;
+    background: none;
+    resize: none;
+    height: 7rem; }
+
+/* Background de Inicio */
+.bg-img {
+  min-height: 100vh;
+  background: url(../../images/bg-movil.webp) no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* Container Inicio */
+.container-inicio {
+  max-width: 37.5rem;
+  padding: 2rem;
+  margin: auto; }
+  .container-inicio p {
+    font-weight: lighter;
+    line-height: 1.8;
+    color: #eee; }
 
 /* Medias Queries */
 @media (min-width: 576px) {
@@ -213,5 +228,60 @@ body {
   .bg-img {
     background: url(../../images/bg.webp) no-repeat; } }
 
-.disclaimer {
-  display: none; }
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+/* Container de Imagen de Sección Nosotros */
+.container-img-nosotros {
+  flex: 1 1 33.75rem; }
+  .container-img-nosotros img {
+    width: 100%; }
+
+/* Container de Contenido de Sección Nosotros */
+.container-content-nosotros {
+  flex: 1 1 33.75rem; }
+
+/* Título de Sección Nosotros */
+#clientes, #contacto, #nosotros, #promociones {
+  padding: 1.25rem 7%; }
+
+#clientes h2, #contacto h2, #nosotros h2, #promociones h2 {
+  color: #fff; }
+
+#clientes h2 span, #contacto h2 span, #nosotros h2 span, #promociones h2 span {
+  color: #fffacd; }
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none; }
+
+/* Título de Sección Promociones */
+#promociones .box-grid div {
+  color: #fff; }
+  #promociones .box-grid div span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    color: #ccc; }
+
+#promociones .box-grid:hover {
+  background-color: #fff; }
+
+#promociones .box-grid:hover > * {
+  color: #010103; }
+
+#promociones .box-grid img {
+  border-radius: 50%; }

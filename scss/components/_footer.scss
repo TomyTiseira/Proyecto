@@ -1,10 +1,10 @@
 @import '../base/colores';
 @import '../base/variables';
+@import '../base/mixin';
 
 /* Logo Redes */
 .redes {
-    height: 3rem;
-    width: 3rem;  
+    @include wid-hei(3rem, 3rem);
     line-height: 3rem;
     color: nth($colores, 4);
     border: $border;
